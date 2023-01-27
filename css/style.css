@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.wrapper{
+    display:flex;
+    flex-flow:row wrap;
+    text-align: center;
+}
+
+.wrapper > * {
+padding: 10px;
+margin:10px;
+flex: 100%;
+border-radius: 15px;
+}
+
+.header {
+    background: rgb(0, 125, 190);
+    height:170px;
+}
+
+/* .image {
+    display: flex;
+    justify-content:;
+} */
+
+.flex-container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    margin: 0 0 0 .45em;
+  }
+      .logo a {
+        color: rgb(28, 24, 22);
+      }
+  
+      .logo, .navigation {
+          list-style: none;
+          text-transform: uppercase;
+      }
+  
+      .logo a, .navigation a {
+          text-decoration: none;
+          letter-spacing: .10rem;
+      }
+  
+  .navigation  {
+    display: flex;
+  }
+  
+  .navigation a {
+    display: block;
+    padding: 1em;
+    color: black;
+  }
+  
+  .navigation a:hover {
+      background:white;
+  }
+  
+  /* *********** media queries *********** */
+  @media all and (max-width: 990px) {
+    .flex-container {
+      flex-direction: column;
+    }
+    
+    .logo {
+    margin: 0;
+  }
+    
+    .navigation  {
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
+  
+  
+  /* ****** ****** */
+  @media all and (max-width: 600px) {
+   
+    .logo {
+      margin: .10em 0;
+      align-self: left; /* align the logo to the left side of 'flex-container' */
+  }
+    
+    .navigation {
+      flex-direction: column;
+    }
+    
+    .navigation a { 
+      text-align: center; 
+      padding: 5px;
+      border-top: 1px solid rgba(255,255,255,0.3); 
+      border-bottom: 1px solid rgba(0,0,0,0.1); 
+    }
+    
+    .navigation li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+
+
+.footer {
+    background: lightgreen;
+    height: 80px;
+}
+
+.main {
+    text-align: left;
+    background: deepskyblue;
+    height: 300px;
+    font-size: 24px;
+}
+
+.aside1 {
+    background: rgb(84, 198, 221);
+}
+
+.aside2 {
+    background: hotpink;
+}
+
+@media all and (min-width:800px){
+    .main {
+        flex:3;
+    }
+
+    .aside1 {
+        order:1;
+    }
+
+    .aside2 {
+        order:2;
+    }
+
+    .main {
+        order:2;
+    }
+
+    .footer {
+        order:4;
+    }
+}
+
+@media all and (min-width:600px){
+    a.side{
+        flex:1;
+    }
+}
