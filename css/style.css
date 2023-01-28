@@ -6,31 +6,41 @@
 
 .wrapper{
     display:flex;
-    flex-flow:row wrap;
+    flex-flow :row wrap;
     text-align: center;
 }
 
 .wrapper > * {
-padding: 10px;
-margin:10px;
+padding: 5px;
+margin:5px;
 flex: 100%;
 border-radius: 15px;
 }
 
 .header {
     background: rgb(0, 125, 190);
-    height:170px;
+    height:auto;
+    align-content: flex-start;
 }
 
-/* .image {
-    display: flex;
-    justify-content:;
-} */
 
 .flex-container  {
     display: flex;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
     align-items: center;
+  }
+
+  .flex-container image {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+
+  .flex-container image1 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
   }
   
   .logo {
@@ -52,6 +62,7 @@ border-radius: 15px;
   
   .navigation  {
     display: flex;
+    flex-flow: row wrap;
   }
   
   .navigation a {
