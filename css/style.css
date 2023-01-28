@@ -123,10 +123,13 @@ border-radius: 15px;
 }
 
 .main {
-    text-align: left;
-    background: deepskyblue;
-    height: 300px;
-    font-size: 24px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items:flex-start;
+    justify-content:flex-start;
+    background: white;
+    text-align:justify;
+    height: auto;   
 }
 
 .aside1 {
@@ -136,7 +139,7 @@ border-radius: 15px;
 .aside2 {
     background: hotpink;
 }
-
+/* 
 @media all and (min-width:800px){
     .main {
         flex:3;
@@ -163,4 +166,4 @@ border-radius: 15px;
     a.side{
         flex:1;
     }
-}
+} */
