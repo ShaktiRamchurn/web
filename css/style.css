@@ -168,7 +168,6 @@ border-radius: 15px;
   flex-flow:row wrap;
   padding: 20px;
   flex:40%;
-  background-color:;
   max-width:50vh;
   height:280px;
   text-align:justify;
@@ -181,7 +180,6 @@ border-radius: 15px;
 .box5 {
   
   margin: 2px;
-  background-color:;
   height: 280px; 
 }
 
@@ -208,7 +206,6 @@ border-radius: 15px;
 {
   display: flex;
   flex-direction: column;
-  background-color:;
   font-size: 20px;
   
 }
@@ -262,9 +259,28 @@ border-radius: 15px;
 .button {
   display: flex;
   flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+  width: 172vh;
+  min-height: 50px;
+  ;
+}
+
+.button2 {
+  display: flex;
+  flex-direction: row;
   justify-content:space-evenly;
   align-items: center;
-  background-color: aqua;
+  width: 172vh;
+  min-height: 50px;
+  margin-top: 20px;
+}
+
+.button1 {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
   width: 172vh;
   min-height: 50px;
   ;
@@ -274,7 +290,6 @@ border-radius: 15px;
 {
   display: flex;
   flex-direction: column;
-  background-color:;
   font-size: 20px;
   margin-bottom: 20px;
   
@@ -296,7 +311,6 @@ border-radius: 15px;
   text-align: left;
   width: 172vh;
   min-height: 50px;
-  background-color: antiquewhite;
   margin-top: 10px;
 }
 
@@ -305,7 +319,6 @@ border-radius: 15px;
   flex-direction: column;
   justify-content: center;
   align-items:flex-start;
-  background-color:bisque;
   width: 172vh;
   min-height: 50px;
   margin-top: 20px;
@@ -317,9 +330,15 @@ border-radius: 15px;
   flex-direction: column;
   justify-content: center;
   align-items:flex-start;
-  background-color:blanchedalmond;
   width: 172vh;
   min-height: 50px;
   margin-top: 20px;
   border-bottom: 2px solid black;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  margin: 5px;
 }
