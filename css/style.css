@@ -106,7 +106,7 @@ border-radius: 15px;
 
 .footer {
     background: rgb(0, 125, 190);
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .main {
@@ -193,3 +193,51 @@ border-radius: 15px;
   height: 280px;
  
 }
+
+.col
+{
+  display: flex;
+  flex-direction: row;
+  min-height: 300px;
+  justify-content:center;
+  align-items:flex-start;
+
+}
+
+.col1
+{
+  display: flex;
+  flex-direction: column;
+  background-color:;
+  font-size: 20px;
+  border: 1px solid black;
+}
+
+
+.col3
+{
+  display: flex;
+  flex-flow: row wrap;
+  min-height:70vh;
+  text-align: left;
+  text-align-last: left;
+
+  
+}
+.col3 p{
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.col2
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: auto;
+  border: 1px solid black;
+}
+
+
