@@ -261,13 +261,13 @@ border-radius: 15px;
 
 .button {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content:space-evenly;
   align-items: center;
   background-color: aqua;
   width: 172vh;
   min-height: 50px;
- 
+  ;
 }
 
 .col11
